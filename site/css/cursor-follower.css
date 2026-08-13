@@ -1,0 +1,42 @@
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 12px rgba(201, 162, 74, 0.55);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  will-change: transform;
+  transition: width 0.25s ease, height 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+  mix-blend-mode: multiply;
+}
+
+.cursor-follower.is-visible {
+  opacity: 0.85;
+}
+
+.cursor-follower.is-hover {
+  width: 28px;
+  height: 28px;
+  opacity: 0.45;
+  background: transparent;
+  border: 1.5px solid var(--color-gold);
+  box-shadow: 0 0 18px rgba(201, 162, 74, 0.35);
+  mix-blend-mode: normal;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-follower {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-follower {
+    display: none !important;
+  }
+}
