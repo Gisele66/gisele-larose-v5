@@ -36,7 +36,7 @@ function renderHeader() {
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo" aria-label="${SITE.name} home">
-          <img src="assets/brand/GL-Logo-Luxury-Green-Emblem.png" alt="GL Solutions — Gisele LaRose">
+          <img src="assets/brand/GL-blue-flat-monogram.png" alt="GL Solutions — Gisele LaRose">
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="sr-only">Menu</span>
