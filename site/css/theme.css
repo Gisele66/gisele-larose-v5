@@ -1082,7 +1082,7 @@ body.modal-open {
     top: 0;
     left: 0;
     width: 100%;
-    height: 15.5rem;
+    height: 20.5rem;
     margin-top: 0;
     object-fit: cover;
     object-position: center 40%;
@@ -1094,7 +1094,7 @@ body.modal-open {
     top: 0;
     left: 0;
     width: 100%;
-    height: 15.5rem;
+    height: 20.5rem;
     background: linear-gradient(
       180deg,
       rgba(18, 40, 70, 0.22) 0%,
@@ -1110,8 +1110,8 @@ body.modal-open {
   }
 
   .section--featured .section-header-row {
-    min-height: 12.25rem;
-    margin-bottom: 1.5rem;
+    min-height: 17.5rem;
+    margin-bottom: 2.75rem;
     align-items: flex-end;
   }
 
@@ -1127,7 +1127,7 @@ body.modal-open {
   .section--featured .btn-ghost {
     background: var(--color-surface);
     color: var(--color-ink);
-    border-color: rgba(255, 255, 255, 0.55);
+    border-color: var(--color-ink);
   }
 
   .section--featured .project-stack {
@@ -1135,9 +1135,12 @@ body.modal-open {
   }
 
   .project-card,
-  .project-card--featured,
-  #alderleaf {
+  .project-card--featured {
     padding: 1.5rem 1.2rem;
+  }
+
+  .project-card--featured {
+    gap: 1.75rem;
   }
 
   .project-cycle-frame {
@@ -1153,6 +1156,11 @@ body.modal-open {
     justify-content: center;
   }
 
+  #alderleaf {
+    padding: 1.25rem 1.35rem;
+    gap: 1rem;
+  }
+
   #alderleaf .project-card-media {
     height: auto;
     align-self: auto;
@@ -1160,17 +1168,39 @@ body.modal-open {
 
   #alderleaf .project-card-media img {
     min-height: 0;
-    height: 14.5rem;
+    height: 12rem;
     object-fit: cover;
     object-position: center 12%;
   }
 
   #alderleaf .project-card-copy {
-    padding: 0.35rem 0 0;
+    padding: 0.2rem 0 0;
+  }
+
+  #alderleaf .project-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
   }
 
   #alderleaf .project-card-claim {
     color: var(--color-ink);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 0.45rem;
+  }
+
+  #alderleaf .project-card-claim:last-of-type {
+    margin-bottom: 0.65rem;
+  }
+
+  #alderleaf .tag-list {
+    margin-top: 0.45rem;
+    margin-bottom: 0.7rem;
+  }
+
+  #alderleaf .tag {
+    font-size: 0.75rem;
+    padding: 0.18rem 0.45rem;
   }
 
   .nav-toggle {
