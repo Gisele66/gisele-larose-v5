@@ -1069,10 +1069,108 @@ body.modal-open {
     order: 0;
   }
 
+  /* Selected work: photo as a header band; cards sit below it */
+  .section--featured {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg);
+  }
+
+  .section--featured .section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15.5rem;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center 40%;
+    z-index: 0;
+  }
+
+  .section--featured::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15.5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(18, 40, 70, 0.22) 0%,
+      rgba(18, 40, 70, 0.5) 100%
+    );
+    z-index: 1;
+  }
+
+  .section--featured > .container {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem 0 3rem;
+  }
+
+  .section--featured .section-header-row {
+    min-height: 12.25rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-end;
+  }
+
+  .section--featured .eyebrow {
+    color: #f4f7fb;
+  }
+
+  .section--featured .section-header-row h2 {
+    color: #fff;
+    text-shadow: 0 1px 10px rgba(18, 40, 70, 0.35);
+  }
+
+  .section--featured .btn-ghost {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    border-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .section--featured .project-stack {
+    gap: 2.25rem;
+  }
+
+  .project-card,
+  .project-card--featured,
+  #alderleaf {
+    padding: 1.5rem 1.2rem;
+  }
+
   .project-cycle-frame {
     height: auto;
     width: min(100%, 14rem);
     min-height: 22rem;
+    justify-self: center;
+    margin-inline: auto;
+  }
+
+  .project-card--featured .project-card-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  #alderleaf .project-card-media {
+    height: auto;
+    align-self: auto;
+  }
+
+  #alderleaf .project-card-media img {
+    min-height: 0;
+    height: 14.5rem;
+    object-fit: cover;
+    object-position: center 12%;
+  }
+
+  #alderleaf .project-card-copy {
+    padding: 0.35rem 0 0;
+  }
+
+  #alderleaf .project-card-claim {
+    color: var(--color-ink);
   }
 
   .nav-toggle {
