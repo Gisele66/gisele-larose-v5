@@ -685,28 +685,31 @@ p:last-child {
 }
 
 .project-cycle.is-exit {
-  animation: swipe-left-out 0.48s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+  z-index: 1;
+  animation: cycle-fade-out 0.95s ease-in-out forwards;
 }
 
 .project-cycle.is-enter {
-  animation: swipe-left-in 0.48s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+  z-index: 2;
+  opacity: 0;
+  animation: cycle-fade-in 0.95s ease-in-out forwards;
 }
 
-@keyframes swipe-left-out {
+@keyframes cycle-fade-out {
   from {
-    transform: translateX(0);
+    opacity: 1;
   }
   to {
-    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 
-@keyframes swipe-left-in {
+@keyframes cycle-fade-in {
   from {
-    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -1069,6 +1072,37 @@ body.modal-open {
     order: 0;
   }
 
+  .hero {
+    padding: 2.75rem 0 3.25rem;
+    min-height: clamp(24rem, 58vh, 32rem);
+  }
+
+  .logo-card {
+    width: min(100%, 20rem);
+    padding: 0.75rem;
+  }
+
+  .hero-copy h1 {
+    margin-bottom: 1.35rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section--what-i-do {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-band {
+    padding: 1.6rem;
+  }
+
   /* Selected work: photo as a header band; cards sit below it */
   .section--featured {
     display: block;
@@ -1202,7 +1236,83 @@ body.modal-open {
     font-size: 0.75rem;
     padding: 0.18rem 0.45rem;
   }
+}
 
+@media (max-width: 520px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .systems-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+}
+
+/* Tablet / mid — between phone stack and full desktop */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .hero {
+    padding: 3.5rem 0 4rem;
+    min-height: clamp(28rem, 54vh, 36rem);
+  }
+
+  .logo-card {
+    width: min(100%, 22rem);
+  }
+
+  .hero-grid {
+    gap: 1.75rem;
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    gap: 0.9rem;
+  }
+
+  .step {
+    padding: 1.25rem;
+  }
+
+  /* BB: laptop full width, phone + copy side by side */
+  .project-card--featured {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1.35rem;
+  }
+
+  .project-card--featured .project-card-media {
+    grid-column: 1 / -1;
+  }
+
+  .project-cycle-frame {
+    justify-self: center;
+  }
+
+  #alderleaf .project-card-media img {
+    min-height: 22rem;
+  }
+
+  .section--featured .section-bg {
+    width: 112%;
+    margin-top: -6%;
+  }
+
+  .modal-box {
+    width: min(100%, 46rem);
+  }
+}
+
+/* Hamburger through tablet widths */
+@media (max-width: 1100px) {
   .nav-toggle {
     display: flex;
   }

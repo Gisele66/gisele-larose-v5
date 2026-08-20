@@ -244,6 +244,7 @@ function swipeProjectCycle(cycle, nextSrc) {
   incoming.className = 'project-cycle is-enter';
   incoming.src = nextSrc;
   incoming.alt = cycle.alt;
+  incoming.style.opacity = '0';
   frame.appendChild(incoming);
   cycle.classList.add('is-exit');
 
@@ -253,12 +254,13 @@ function swipeProjectCycle(cycle, nextSrc) {
     finished = true;
     cycle.remove();
     incoming.classList.remove('is-enter');
+    incoming.style.opacity = '';
     incoming.setAttribute('data-cycle-image', '');
     frame.classList.remove('is-swiping');
   }
 
   incoming.addEventListener('animationend', finish);
-  window.setTimeout(finish, 650);
+  window.setTimeout(finish, 1100);
 }
 
 function initProjectCards() {

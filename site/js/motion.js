@@ -78,7 +78,7 @@
         } else if (hero && !hero.hasAttribute('data-lock-hero')) {
           hero.src = next;
         }
-      }, 2800);
+      }, 4000);
     });
   }
 
