@@ -57,3 +57,8 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 
 - Mobile Selected work: Sleeping Beauty as a header band; BB card below it; Alderleaf type/screenshot scaled to fit the card.
 - **Re-locked:** Bathroom Busters featured card and Alderleaf.ca card (desktop + approved mobile). Last locked date is the revert point.
+
+### Aug 20, 2026
+
+- Sticky nav on `#site-header`; scroll swaps nav monogram → wordmark.
+- **Locked:** Sticky nav + scroll logo swap — revert to this date.

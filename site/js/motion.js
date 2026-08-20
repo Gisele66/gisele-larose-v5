@@ -1,5 +1,5 @@
 /**
- * Motion layer — Lenis + GSAP (single ticker), logo tilt, magnetic buttons, gallery cycle.
+ * Motion layer — Lenis + GSAP (single ticker), magnetic buttons, gallery cycle.
  */
 (function () {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -23,22 +23,6 @@
     }
     window.addEventListener('scroll', update, { passive: true });
     update();
-  }
-
-  function initLogoTilt() {
-    const card = document.querySelector('.logo-card');
-    if (!card || coarse || reduce) return;
-
-    const stage = card.parentElement;
-    stage.addEventListener('mousemove', (event) => {
-      const rect = stage.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 10}deg)`;
-    });
-    stage.addEventListener('mouseleave', () => {
-      card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-    });
   }
 
   function initMagnetic() {
@@ -115,13 +99,6 @@
       ease: 'power3.out',
       clearProps: 'transform'
     });
-    gsap.from('.logo-card', {
-      scale: 0.92,
-      opacity: 0,
-      duration: 1,
-      ease: 'power3.out',
-      clearProps: 'transform'
-    });
 
     gsap.utils.toArray('.project-card, .step, .skill-card, .systems-panel').forEach((el) => {
       gsap.from(el, {
@@ -151,7 +128,6 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const progressBar = initProgressBar();
-    initLogoTilt();
     initMagnetic();
     initSystemsToggle();
     window.setTimeout(() => {

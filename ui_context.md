@@ -38,7 +38,7 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 | 901–1100px | Tablet mid — hamburger, 2-col skills, BB laptop full-width then phone+copy, shorter hero |
 | ≥1101px | Desktop — full multi-column layout |
 
-**Home — hero:** `ocean-view.jpg` photo banner — **locked** `object-position: center 40%`. Heading + CTAs only (no lead paragraph, no copy card).
+**Home — hero:** `ocean-view.jpg` photo banner — **locked** `object-position: center 40%`. Name image `gisele-larose-name-2.png`; tagline “Full-stack web development and business solutions built to deliver.” Nav keeps GL logo only.
 
 **Hero background favorites to remember:** option 1 (soft cream→sage + gold glow) and option 4 (quiet geometric sage band + gold light). Option 2 (coastal mist) was also liked earlier.
 
@@ -76,7 +76,7 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 |-------|--------|
 | Cursor | Forest accent follower (desktop, respects reduced motion) |
 | Scroll | Lenis + GSAP ScrollTrigger (CDN) |
-| Extra | Magnetic buttons, logo tilt, screenshot cycle |
+| Extra | Magnetic buttons, screenshot cycle |
 
 ---
 
@@ -84,4 +84,4 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 
 Brand originals in `site/assets/brand/` (from `GL Solutions 2026\`).
 
-**Selected:** hero `GL-blue-flat.png` · nav `GL-blue-flat-monogram.png` (GL letters only, transparent).
+**Selected:** nav at top `GL-blue-flat-monogram.png` · nav on scroll `gisele-larose-solutions-2.png` (nav swap open). Hero name `gisele-larose-name-2.png`.

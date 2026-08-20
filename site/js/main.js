@@ -36,7 +36,8 @@ function renderHeader() {
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo" aria-label="${SITE.name} home">
-          <img src="assets/brand/GL-blue-flat-monogram.png" alt="GL Solutions — Gisele LaRose">
+          <img class="logo-img logo-img--mark" src="assets/brand/GL-blue-flat-monogram.png" alt="GL Solutions — Gisele LaRose">
+          <img class="logo-img logo-img--word" src="assets/brand/gisele-larose-solutions-2.png" alt="" aria-hidden="true">
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="sr-only">Menu</span>
@@ -311,12 +312,27 @@ function initMobileNav() {
   });
 }
 
+function initHeaderScroll() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  const threshold = 56;
+  function update() {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    header.classList.toggle('is-scrolled', y > threshold);
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
 function initSiteChrome() {
   const headerMount = document.getElementById('site-header');
   const footerMount = document.getElementById('site-footer');
   if (headerMount) headerMount.innerHTML = renderHeader();
   if (footerMount) footerMount.innerHTML = renderFooter();
   initMobileNav();
+  initHeaderScroll();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

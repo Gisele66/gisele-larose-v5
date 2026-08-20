@@ -4,7 +4,7 @@
 (function () {
   const LERP = 0.16;
   const HOVER_SELECTORS =
-    'a, button, .btn, .project-card, .skill-card, .systems-panel, .step, .contact-card, .cta-band, .logo-stage, .gallery-shot';
+    'a, button, .btn, .project-card, .skill-card, .systems-panel, .step, .contact-card, .cta-band, .gallery-shot';
 
   function shouldDisable() {
     return (
