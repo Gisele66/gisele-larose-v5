@@ -52,3 +52,8 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 - **Locked:** Alderleaf.ca project modal — no edits until unlock or an explicit change request.
 - Logo trials: settled on `GL-glossy-black-gold.png` for hero + nav (transparent). Brand folder cleaned of hard-cut transparent exports.
 - Hero bg trials: remember **option 1** (cream→sage + gold glow) and **option 4** (geometric sage band + gold). Trying option 5 (blurred ocean as texture).
+
+### Aug 14, 2026
+
+- Mobile Selected work: Sleeping Beauty as a header band; BB card below it; Alderleaf type/screenshot scaled to fit the card.
+- **Re-locked:** Bathroom Busters featured card and Alderleaf.ca card (desktop + approved mobile). Last locked date is the revert point.

@@ -88,7 +88,7 @@
       return;
     }
 
-    const lenis = new Lenis({ lerp: 0.08 });
+    const lenis = new Lenis({ lerp: 0.18 });
 
     if (typeof ScrollTrigger !== 'undefined') {
       gsap.registerPlugin(ScrollTrigger);

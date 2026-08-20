@@ -27,7 +27,7 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 
 **Home — What I do:** plain section (no banner image), Primary / Add-on panels.
 
-**Home — Selected work:** `assets/images/banners/sleeping-beauty.jpg` behind Bathroom Busters + Alderleaf. Scaled to 118% width; raised with `margin-top` (not transform). Light blue scrim for type.
+**Home — Selected work:** `assets/images/banners/sleeping-beauty.jpg` behind Bathroom Busters + Alderleaf on desktop (118% width, `margin-top`, light blue scrim). Mobile: photo is a header band only; BB + Alderleaf cards sit below. **BB card and Alderleaf card locked** (2026-08-14).
 
 **Home — hero:** `ocean-view.jpg` photo banner — **locked** `object-position: center 40%`. Heading + CTAs only (no lead paragraph, no copy card).
 
