@@ -1334,7 +1334,22 @@ body.modal-open {
     justify-self: center;
   }
 
-  /* Alderleaf: stack copy above full-width screenshot (no side-by-side crop) */
+  .section--featured .section-bg {
+    width: 112%;
+    margin-top: -6%;
+  }
+
+  .modal-box {
+    width: min(100%, 46rem);
+  }
+}
+
+/*
+  Tablet landscape (and mid): Alderleaf stack.
+  iPad landscape is often 1180–1366px — above the 1100 “mid” band — so it
+  otherwise hits desktop side-by-side + cover crop. Touch-only so mouse desktops stay 2-col.
+*/
+@media (min-width: 901px) and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
   #alderleaf {
     grid-template-columns: 1fr;
     align-items: start;
@@ -1359,15 +1374,6 @@ body.modal-open {
     aspect-ratio: 1720 / 1088;
     object-fit: cover;
     object-position: center top;
-  }
-
-  .section--featured .section-bg {
-    width: 112%;
-    margin-top: -6%;
-  }
-
-  .modal-box {
-    width: min(100%, 46rem);
   }
 }
 
