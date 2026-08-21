@@ -62,3 +62,9 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 
 - Sticky nav on `#site-header`; scroll swaps nav monogram → wordmark.
 - **Locked:** Sticky nav + scroll logo swap — revert to this date.
+
+### Aug 21, 2026
+
+- **Locked:** Home hero name + tagline (`gisele-larose-name-2.png` + built to deliver).
+- **Re-locked:** Sticky nav + scroll logo swap (monogram → `gisele-larose-solutions-2.png`). Both are revert points until a later polish pass.
+- Tablet Alderleaf: stack copy above full-aspect screenshot (768–1100); phone ≤767 crop and desktop unchanged.

@@ -1233,9 +1233,10 @@ body.modal-open {
 
   #alderleaf .project-card-media img {
     min-height: 0;
-    height: 12rem;
+    height: auto;
+    aspect-ratio: 1720 / 1088;
     object-fit: cover;
-    object-position: center 12%;
+    object-position: center top;
   }
 
   #alderleaf .project-card-copy {
@@ -1266,6 +1267,15 @@ body.modal-open {
   #alderleaf .tag {
     font-size: 0.75rem;
     padding: 0.18rem 0.45rem;
+  }
+}
+
+/* Phone — locked Alderleaf crop (2026-08-14) */
+@media (max-width: 767px) {
+  #alderleaf .project-card-media img {
+    height: 12rem;
+    aspect-ratio: auto;
+    object-position: center 12%;
   }
 }
 
@@ -1324,8 +1334,31 @@ body.modal-open {
     justify-self: center;
   }
 
+  /* Alderleaf: stack copy above full-width screenshot (no side-by-side crop) */
+  #alderleaf {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1.25rem;
+    padding: 1.75rem 1.5rem;
+  }
+
+  #alderleaf .project-card-copy {
+    order: -1;
+  }
+
+  #alderleaf .project-card-media {
+    height: auto;
+    align-self: stretch;
+    min-height: 0;
+  }
+
   #alderleaf .project-card-media img {
-    min-height: 22rem;
+    min-height: 0;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1720 / 1088;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .section--featured .section-bg {
