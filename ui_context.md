@@ -37,7 +37,7 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 | ≤767px | Phone — Alderleaf media crop `12rem` (locked 2026-08-14) |
 | ≤900px | Phone / small tablet — stacked grids, featured photo band, hamburger |
 | 768–1100px | Tablet — Alderleaf stacks copy above full-aspect screenshot (no side-by-side crop) |
-| 901–1366px | Tablet mid + landscape (incl. iPad) — Alderleaf stacks; not gated on hover/pointer (iPadOS reports as desktop) |
+| 901–1600px | Tablet mid + landscape (incl. iPad Pro 13" ~1376) — Alderleaf stacks |
 | 901–1100px | Tablet mid — hamburger, 2-col skills, BB laptop full-width then phone+copy, shorter hero |
 | ≥1101px | Desktop — full multi-column layout |
 

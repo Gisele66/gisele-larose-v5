@@ -67,4 +67,4 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 
 - **Locked:** Home hero name + tagline (`gisele-larose-name-2.png` + built to deliver).
 - **Re-locked:** Sticky nav + scroll logo swap (monogram → `gisele-larose-solutions-2.png`). Both are revert points until a later polish pass.
-- Tablet Alderleaf: stack copy above full-aspect screenshot (768–1100); phone ≤767 crop and desktop unchanged.
+- Tablet Alderleaf: stack copy above full-aspect screenshot (768–1600, covers iPad Pro landscape); phone ≤767 crop and desktop ≥1601 unchanged. Live Pages URL is repo root (`…/gisele-larose-v5/`), not `/site/`.

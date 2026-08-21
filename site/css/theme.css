@@ -1345,11 +1345,11 @@ body.modal-open {
 }
 
 /*
-  Tablet mid + landscape (incl. iPad ~1180–1366px): Alderleaf stack.
-  Do not gate on hover/pointer — iPadOS Safari often reports as desktop
-  (hover: hover / pointer: fine), which blocked the previous touch-only rule.
+  Tablet mid + landscape: Alderleaf stack.
+  iPad Pro 13" landscape is ~1376px CSS (older 12.9" is 1366). Cap at 1600
+  so large tablets get the stack; true desktop (≥1601) keeps side-by-side.
 */
-@media (min-width: 901px) and (max-width: 1366px) {
+@media (min-width: 901px) and (max-width: 1600px) {
   #alderleaf {
     grid-template-columns: 1fr;
     align-items: start;
