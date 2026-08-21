@@ -1345,11 +1345,11 @@ body.modal-open {
 }
 
 /*
-  Tablet landscape (and mid): Alderleaf stack.
-  iPad landscape is often 1180–1366px — above the 1100 “mid” band — so it
-  otherwise hits desktop side-by-side + cover crop. Touch-only so mouse desktops stay 2-col.
+  Tablet mid + landscape (incl. iPad ~1180–1366px): Alderleaf stack.
+  Do not gate on hover/pointer — iPadOS Safari often reports as desktop
+  (hover: hover / pointer: fine), which blocked the previous touch-only rule.
 */
-@media (min-width: 901px) and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
+@media (min-width: 901px) and (max-width: 1366px) {
   #alderleaf {
     grid-template-columns: 1fr;
     align-items: start;
