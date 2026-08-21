@@ -3,7 +3,8 @@
 Forked from v4 for palette / atmosphere experiments while v4 stays frozen at its last commit.
 
 **Status:** Active experiment  
-**Folder:** `Career-Portfolio/Gisele-LaRose-V5/site`
+**Folder:** `Career-Portfolio/Gisele-LaRose-V5/site`  
+**Live:** https://gisele66.github.io/gisele-larose-v5/ (also https://gisele66.github.io/gisele-larose-v5/site/)
 
 ---
 

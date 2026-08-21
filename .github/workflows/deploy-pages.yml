@@ -23,8 +23,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # Publish site/ as Pages root AND mirror under /site/ so both URLs work
+      - name: Stage Pages artifact
+        run: |
+          mkdir -p public/site
+          cp -a site/. public/
+          cp -a site/. public/site/
+          touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: public
       - id: deployment
         uses: actions/deploy-pages@v4
