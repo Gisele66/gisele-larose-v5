@@ -27,7 +27,7 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 
 **Home — What I do:** plain section (no banner image), Primary / Add-on panels.
 
-**Home — Selected work:** `assets/images/banners/sleeping-beauty.jpg` behind Bathroom Busters + Alderleaf on desktop (118% width, `margin-top`, light blue scrim). Mobile: photo is a header band only; BB + Alderleaf cards sit below. **Alderleaf** desktop + phone locked (2026-08-14); tablet stacks full-aspect screenshot (2026-08-21). BB card open for slideshow motion.
+**Home — Selected work:** `assets/images/banners/sleeping-beauty.jpg` behind Bathroom Busters + Alderleaf on desktop (118% width, `margin-top`, light blue scrim). Mobile: photo is a header band only; BB + Alderleaf cards sit below. **Alderleaf card locked** (2026-08-21: desktop + tablet stack + phone). BB card open for slideshow motion.
 
 ## Breakpoints
 
@@ -41,9 +41,12 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 | 901–1100px | Tablet mid — hamburger, 2-col skills, BB laptop full-width then phone+copy, shorter hero |
 | ≥1101px | Desktop — full multi-column layout |
 
-**Home — hero:** `ocean-view.jpg` photo banner — **locked** `object-position: center 40%`. Name image `gisele-larose-name-2.png` + tagline “Full-stack web development and business solutions built to deliver.” — **locked** (2026-08-21).
+**Home — hero:** `ocean-view-4.jpg` full-bleed — **locked** (2026-08-22). Name image + dark sky tagline **locked** (2026-08-25).
 
 **Hero background favorites to remember:** option 1 (soft cream→sage + gold glow) and option 4 (quiet geometric sage band + gold light). Option 2 (coastal mist) was also liked earlier.
+
+**Coastal side-panel style (saved for later section use):**  
+`linear-gradient(180deg, #9cc9e4 0%, #6a9ebc 48%, #3a6f8c 100%)` — sky → mid → water. Tried behind contained hero photo; user liked for another section. Also as CSS var `--gradient-coastal-panels`.
 
 ---
 
@@ -87,4 +90,4 @@ Banners sit outside `.container`. Overlay copy goes in `.banner__content` > `.co
 
 Brand originals in `site/assets/brand/` (from `GL Solutions 2026\`).
 
-**Selected:** nav at top `GL-blue-flat-monogram.png` · nav on scroll `gisele-larose-solutions-2.png`. Hero name `gisele-larose-name-2.png`. **Nav scroll swap + hero name/tagline locked** (2026-08-21).
+**Selected:** nav at top `GL-blue-flat-monogram.png` · nav on scroll `gisele-larose-solutions-2.png` — **nav open** to align with hero content. Hero name `gisele-larose-name-2.png` **locked** (2026-08-22).

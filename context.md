@@ -68,3 +68,14 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 - **Locked:** Home hero name + tagline (`gisele-larose-name-2.png` + built to deliver).
 - **Re-locked:** Sticky nav + scroll logo swap (monogram → `gisele-larose-solutions-2.png`). Both are revert points until a later polish pass.
 - Tablet Alderleaf: stack copy above full-aspect screenshot (768–1600, covers iPad Pro landscape); phone ≤767 crop and desktop ≥1601 unchanged. Live Pages URL is repo root (`…/gisele-larose-v5/`), not `/site/`.
+- **Re-locked:** Alderleaf.ca card (desktop + tablet stack + phone) — revert to 2026-08-21.
+
+### Aug 22, 2026
+
+- **Re-locked:** Home hero name + tagline (smaller name ~28rem, light tagline on photo, tightened spacing).
+- **Locked:** Home hero banner (`ocean-view-4.jpg` full-bleed framing + sky-band copy placement).
+- **Unlocked:** Sticky nav logos — shift left so visible GL/wordmark align with hero name content.
+
+### Aug 25, 2026
+
+- **Re-locked:** Home hero name + tagline — main line `var(--color-ink)` for sky contrast; gold “built to deliver” kept.
