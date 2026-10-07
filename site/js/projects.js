@@ -60,7 +60,7 @@ const PORTFOLIO_PROJECTS = [
       'Reports and moderation workflow',
       'Owner participation features'
     ],
-    links: [{ text: 'Visit site', url: 'https://bathroombusters.app', primary: true }],
+    links: [{ text: 'View on GitHub', url: 'https://github.com/Gisele66/BathroomBusters-v2', primary: true }],
     tags: [
       'Node.js',
       'SQLite',
