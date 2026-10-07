@@ -30,7 +30,7 @@ jobs:
           cp -a site/. public/
           cp -a site/. public/site/
           touch public/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: public
       - id: deployment
